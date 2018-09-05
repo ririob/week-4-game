@@ -1,0 +1,66 @@
+body {
+    background-image: url("../images/classy.lnk");
+    background-repeat: repeat;
+}
+#next-area {
+    overflow: auto;
+}
+
+#next-area div {
+    float: left;
+}
+
+#random-area {
+    width: 200px;
+    height: 100px;
+    padding: 4px;
+    font-size: 3vw;
+    color: purple;
+    background-color: grey;
+}
+
+#win-area {
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: grey;
+}
+#score-title {
+    width: 210px;
+    padding: 4px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: grey;
+}
+
+#score-area {
+    width: 210px;
+    height: 100px;
+    padding: 4px;
+    color: ghostwhite;
+    background-color: grey;
+}
+
+#score-number {
+    font-size: 3vw;
+}
+
+.crystals-button {
+    display: inline;
+}
+
+.crystal-img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: violet;
+    border: solid;
+    border-color: lightblue;
+}
+
+.footer {
+    padding: 1px;
+    margin-bottom: 1px;
+}
