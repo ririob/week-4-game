@@ -1,5 +1,5 @@
 # week-4-game
-Display crystals as buttons.
+<!-- Display crystals as buttons.
 
 Random number shown at start of the game.
 
@@ -21,9 +21,9 @@ Game must not be refreshed as means to restart the game.
 
 The random number shown at start of the game should be between 19 - 120.
 
-Each crystal should have a hidden random value between 1 -12.
+Each crystal should have a hidden random value between 1 -12. -->
 
-#PESUDOCODE FOR CRYSTAL COLLECTOR GAME
+# PESUDOCODE FOR CRYSTAL COLLECTOR GAME
 <!-- Create basic HTML layout for game -->
 
 <!-- Add hidden random value to each crystals between 1 - 12. -->
@@ -44,4 +44,8 @@ Each crystal should have a hidden random value between 1 -12.
 
 <!-- Create player's score counter -->
 
-
+This is a simple game of crystal collecting. You will be given a random number at the start of the game.
+There are four four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+The value of each crystal is hidden from you until you click on it.
+Each time when the game starts, the game will change the values of each crystal.

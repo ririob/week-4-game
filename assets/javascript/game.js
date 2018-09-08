@@ -11,6 +11,15 @@ $(document).ready(function() {
     var losses = 0;
     var crystals;
 
+    // Create Audio for crystals click
+    // var audioElement = document.createElement("audio");
+    // set it's source to the location
+    // audioElement.setAttribute("src", "assets/images/switch-1.mp3");
+    // play tone
+    //$(".crystals-button").on("click", function() {
+       // audioElement.play();
+    //})
+
     // Function that generate random values for crystals and returns crystals object.
     function randomNumCrystals() {
         // Crystals Object.
