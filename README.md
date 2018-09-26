@@ -1,4 +1,4 @@
-# week-4-game
+# Crystals Collector
 <!-- Display crystals as buttons.
 
 Random number shown at start of the game.
@@ -23,7 +23,7 @@ The random number shown at start of the game should be between 19 - 120.
 
 Each crystal should have a hidden random value between 1 -12. -->
 
-# PESUDOCODE FOR CRYSTAL COLLECTOR GAME
+# PSEUDOCODE FOR CRYSTAL COLLECTOR GAME
 <!-- Create basic HTML layout for game -->
 
 <!-- Add hidden random value to each crystals between 1 - 12. -->
