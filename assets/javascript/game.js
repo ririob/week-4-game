@@ -96,6 +96,12 @@ $(document).ready(function() {
         $("#score-area").html(scoreNumDiv);
         // $("#score-area").html(scoreNumDiv);
     }
+
+    // function to update matched number
+    function updateMatchingNumber(crystal) {
+        // update the current guess number based on which crystals was clicked
+        randomMatchingNumber += crystals[crystal.attr("data-name")].points;
+    }
     // calling our functions
     newGame();
     renderCrystalImg();

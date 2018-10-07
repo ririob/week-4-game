@@ -38,7 +38,7 @@ Each crystal should have a hidden random value between 1 -12. -->
 
 <!-- Build win/loss display and append it to HTML -->
 
-Function to current guess when a crystal is clicked
+Function to add current guess when a crystal is clicked
 
 Create on.click event for the crystals
 
