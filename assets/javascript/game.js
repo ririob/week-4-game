@@ -59,7 +59,38 @@ $(document).ready(function() {
             $("#crystal-area").append(crystalDiv);
         }
     };
+
+    // function to update page
+    function updatePage(ifUserWin) {
+        $("#win-area").empty;
+
+        // if user won
+        if(ifUserWin === true) {
+            alert("Congratulations, You won!");
+            newGame();
+            renderMatchingNumber();
+        }
+        else if(ifUserWin === false) {
+            alert("Sorry, You lost. Try again!");
+            newGame();
+            renderMatchingNumber();
+        }
+
+        // building the win/loss display
+        var wSpan = $("<span>").text(wins);
+        var lSpan = $("<span>").text(losses);
+
+        var pWins = $("<p>").text("Wins: ");
+        var pLosses = $("<p>").text("Losses: ");
+
+        pWins.append(wSpan);
+        pLosses.append(lSpan);
+
+        $("#win-area").append(pWins);
+        $("#win-area").append(pLosses);
+    }
     // calling our functions
     newGame();
     renderCrystalImg();
+    updatePage();
 });
