@@ -34,9 +34,9 @@ Each crystal should have a hidden random value between 1 -12. -->
 
 <!-- Function to reset game without having to refresh page -->
 
-Functions that handles updating the page and displaying win/loss message
+<!-- Functions that handles updating the page and displaying win/loss message -->
 
-Build win/loss display and append it to HTML
+<!-- Build win/loss display and append it to HTML -->
 
 Function to current guess when a crystal is clicked
 

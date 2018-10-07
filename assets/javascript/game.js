@@ -89,8 +89,16 @@ $(document).ready(function() {
         $("#win-area").append(pWins);
         $("#win-area").append(pLosses);
     }
+
+    // function to render matching number
+    function renderMatchingNumber() {
+        var scoreNumDiv = $("<div id='score-number'>").text(randomMatchingNumber);
+        $("#score-area").html(scoreNumDiv);
+        // $("#score-area").html(scoreNumDiv);
+    }
     // calling our functions
     newGame();
     renderCrystalImg();
     updatePage();
+    renderMatchingNumber();
 });
