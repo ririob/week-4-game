@@ -10,7 +10,7 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
     // var counter = 0;
-    var crystal;
+    var crystals;
 
     // Function to create a random number between 1 and 12 and return our crystal objects
     function randomCrystalNum() {
@@ -44,10 +44,22 @@ $(document).ready(function() {
         // Makes the current total number 0
         randomMatchingNumber = 0;
         // Generates random crystal values
-        crystal = randomCrystalNum();
+        crystals = randomCrystalNum();
         // Genrates random number that we have to meet and renders it to the page
         randomNumber = randomNumGen();
         $("#random-area").text(randomNumber);
     };
+
+    // function to render crystal images to page
+    function renderCrystalImg() {
+        for (var i in crystals) {
+            var crystalDiv = $("<div class='crystals-button' data-name='" + i + "'>");
+            var crystalImg = $("<img alt='image' class='crystl-img'>").attr("src", crystals[i].url);
+            crystalDiv.append(crystalImg);
+            $("#crystal-area").append(crystalDiv);
+        }
+    };
+    // calling our functions
     newGame();
+    renderCrystalImg();
 });

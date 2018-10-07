@@ -30,6 +30,8 @@ Each crystal should have a hidden random value between 1 -12. -->
 
 <!-- Geneate random number between 19 - 120-->
 
+<!-- function to render crystals to page -->
+
 <!-- Function to reset game without having to refresh page -->
 
 <!-- Functions that handles updating the page and displaying win/loss message -->
