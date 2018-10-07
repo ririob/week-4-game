@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     // function to update page
     function updatePage(ifUserWin) {
-        $("#win-area").empty;
+        // $("#win-area").empty;
 
         // if user won
         if(ifUserWin === true) {
@@ -77,16 +77,16 @@ $(document).ready(function() {
         }
 
         // building the win/loss display
-        var wSpan = $("<span>").text(wins);
-        var lSpan = $("<span>").text(losses);
+        // var wSpan = $("<span>").text(wins);
+        // var lSpan = $("<span>").text(losses);
 
-        var pWins = $("<p>").text("Wins: ");
-        var pLosses = $("<p>").text("Losses: ");
+        $("#win-area").text("Wins: " + wins);
+        var pLosses = $("<p>").text("Losses: " + losses);
 
-        pWins.append(wSpan);
-        pLosses.append(lSpan);
+        // pWins.append(wSpan);
+        // pLosses.append(lSpan);
 
-        $("#win-area").append(pWins);
+        // $("#win-area").append(pWins);
         $("#win-area").append(pLosses);
     }
 
@@ -100,11 +100,35 @@ $(document).ready(function() {
     // function to update matched number
     function updateMatchingNumber(crystal) {
         // update the current guess number based on which crystals was clicked
-        randomMatchingNumber += crystals[crystal.attr("data-name")].points;
+        randomMatchingNumber += crystals[crystal.attr("data-name")].number;
     }
-    // calling our functions
+
+    // calling our functions to begin game
     newGame();
     renderCrystalImg();
     updatePage();
     renderMatchingNumber();
+
+    // creating an onclick event for the crystals
+    $(".crystals-button").on("click", function(event) {
+        // update the current guess number and re-render it.
+        updateMatchingNumber($(this));
+        renderMatchingNumber();
+
+        // check to see if user won or lost.
+        // if current guess number equals the target number...
+        if(randomMatchingNumber === randomNumber) {
+            // increase wins, restart game and update page
+            wins++;
+            newGame();
+            updatePage(true);
+        }
+        // if current guess exceeds targer number...
+        else if(randomMatchingNumber > randomNumber) {
+            // increase losses, restart game and update page
+            losses++;
+            newGame();
+            updatePage(false);
+        }
+    })
 });

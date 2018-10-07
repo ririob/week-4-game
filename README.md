@@ -38,11 +38,11 @@ Each crystal should have a hidden random value between 1 -12. -->
 
 <!-- Build win/loss display and append it to HTML -->
 
-Function to add current guess when a crystal is clicked
+<!-- Function to add current guess when a crystal is clicked -->
 
-Create on.click event for the crystals
+<!-- Create on.click event for the crystals -->
 
-Create player's score counter
+<!-- Create player's score counter -->
 
 This is a simple game of crystal collecting. You will be given a random number at the start of the game.
 There are four four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
